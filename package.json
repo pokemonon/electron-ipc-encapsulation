@@ -1,0 +1,28 @@
+{
+    "name": "electron-ipc-encapsulation",
+    "version": "0.0.1",
+    "main": "index.js",
+    "license": "MIT",
+    "devDependencies": {
+        "@pokemonon/eslint-plugin-common": "~0.0.1",
+        "commitizen": "^4.2.4",
+        "cz-conventional-changelog": "^3.3.0",
+        "electron": "^13.1.4",
+        "eslint": "^7.27.0",
+        "husky": "^6.0.0",
+        "standard-version": "^9.3.0",
+        "typescript": "latest"
+    },
+    "config": {
+        "commitizen": {
+            "path": "./node_modules/cz-conventional-changelog"
+        }
+    },
+    "scripts": {
+        "dump": "HUSKY=0 standard-version --release-as",
+        "release": "npm publish"
+    },
+    "dependencies": {
+        "@pokemonon/knife": "^1.0.0-beta.6"
+    }
+}
