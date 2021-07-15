@@ -1,7 +1,7 @@
-const env = process.env.NODE_ENV;
-
 module.exports = {
     presets: [
-        ['@pokemonon/babel-preset-common', { env }],
+        ['@pokemonon/babel-preset-common', {
+            useBuiltIns: false,
+        }],
     ],
 };

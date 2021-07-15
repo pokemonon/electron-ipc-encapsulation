@@ -1,15 +1,19 @@
 {
-    "name": "electron-ipc-encapsulation",
+    "name": "@pokemonon/electron-ipc-encapsulation",
     "version": "0.0.1",
     "main": "index.js",
     "license": "MIT",
     "devDependencies": {
+        "@packbag/cli": "^0.0.0-beta.4",
+        "@packbag/cli-rollup-preset-common": "^0.0.0-beta.3",
+        "@pokemonon/babel-preset-common": "^0.0.1",
         "@pokemonon/eslint-plugin-common": "~0.0.1",
         "commitizen": "^4.2.4",
         "cz-conventional-changelog": "^3.3.0",
         "electron": "^13.1.4",
         "eslint": "^7.27.0",
         "husky": "^6.0.0",
+        "rimraf": "^3.0.2",
         "standard-version": "^9.3.0",
         "typescript": "latest"
     },
@@ -19,10 +23,12 @@
         }
     },
     "scripts": {
+        "build": "rimraf dist && packbag rollup",
         "dump": "HUSKY=0 standard-version --release-as",
         "release": "npm publish"
     },
     "dependencies": {
+        "@babel/runtime": "^7.14.6",
         "@pokemonon/knife": "^1.0.0-beta.6"
     }
 }

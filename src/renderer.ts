@@ -1,8 +1,13 @@
-import { ipcRenderer, IpcRendererEvent } from 'electron';
+import { ipcRenderer, IpcRendererEvent, IpcRenderer } from 'electron';
 import { eventToP } from '@pokemonon/knife';
 
 const ELECTRON_IPC_ENCAPSULATION_EVENT = 'ELECTRON_IPC_ENCAPSULATION_EVENT';
-const createRendererComm = () => {
+interface CreateRendererCommOpts {
+    defaultTarget?: IpcRenderer
+}
+const createRendererComm = ({
+    defaultTarget = ipcRenderer,
+}: CreateRendererCommOpts = {}) => {
     return eventToP<IpcRendererEvent>({
         onAdapter(cb) {
             function callback(event: IpcRendererEvent, ...args) {
@@ -21,7 +26,7 @@ const createRendererComm = () => {
                 eventName,
                 data,
             } = info;
-            const target = emitTarget || evt?.sender;
+            const target = emitTarget || evt?.sender || defaultTarget;
             if (!target) {
                 throw new Error('no exist target');
             }
