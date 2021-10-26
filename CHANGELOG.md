@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.0.1-beta.3](https://github.com/pokemonon/electron-ipc-encapsulation/compare/v0.0.1-beta.2...v0.0.1-beta.3) (2021-10-26)
+
+
+### Bug Fixes
+
+* eventToP emit无参问题 ([8c68e44](https://github.com/pokemonon/electron-ipc-encapsulation/commit/8c68e4420807b0ea64619371dc44aa2ab096096d))
+
 ### [0.0.1-beta.2](https://github.com/pokemonon/electron-ipc-encapsulation/compare/v0.0.1-beta.1...v0.0.1-beta.2) (2021-10-26)
 
 
