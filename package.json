@@ -30,6 +30,6 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.14.6",
-        "@pokemonon/knife": "^1.0.0-beta.9"
+        "@pokemonon/knife": "^1.0.0-beta.10"
     }
 }
