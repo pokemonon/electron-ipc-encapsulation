@@ -1,6 +1,6 @@
 {
     "name": "@pokemonon/electron-ipc-encapsulation",
-    "version": "0.0.1",
+    "version": "0.0.1-beta.1",
     "main": "index.js",
     "license": "MIT",
     "devDependencies": {
