@@ -4,6 +4,7 @@
     "main": "index.js",
     "license": "MIT",
     "devDependencies": {
+        "@babel/preset-typescript": "^7.15.0",
         "@packbag/cli": "^0.0.0-beta.4",
         "@packbag/cli-rollup-preset-common": "^0.0.0-beta.3",
         "@pokemonon/babel-preset-common": "^0.0.1",
@@ -29,6 +30,6 @@
     },
     "dependencies": {
         "@babel/runtime": "^7.14.6",
-        "@pokemonon/knife": "^1.0.0-beta.6"
+        "@pokemonon/knife": "^1.0.0-beta.9"
     }
 }
